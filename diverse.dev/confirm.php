@@ -19,7 +19,7 @@
       <tr>
         <th>Name Product</th>
         <th>Price</th>
-        <th>Username</th>
+        <th>Name</th>
         <th>Email</th>
         <th>No Telephone</th>
         <th>Payment Recipt</th>
@@ -33,11 +33,11 @@
     while($row = $data->fetch_assoc()) {
     ?>
       <tr>
-        <td><?= $row['nama'];?></td>
-        <td>Rp.<?= $row['harga'];?>.,/10pax</td>
-        <td><?= $row['username'];?></td>
+        <td><?= $row['product_name'];?></td>
+        <td>Rp.<?= $row['harga'];?>.,</td>
+        <td><?= $row['name'];?></td>
         <td><?= $row['email'];?></td>
-        <td><?= $row['no_tlp'];?></td>
+        <td>+<?= $row['no_tlp'];?></td>
         <td>
         <img src="image/bukti/<?php echo htmlentities($row['picture']);?>" width="70" height="70">
       </td>

@@ -25,8 +25,10 @@ if($cek > 0){
  
             $_SESSION['username'] = $data['username'];
             $_SESSION['id_user'] = $data['id_user'];
+            $_SESSION['name'] = $data['name'];
             $_SESSION['email'] = $data['email'];
             $_SESSION['no_tlp'] = $data['no_tlp'];
+            $_SESSION['address'] = $data['address'];
             $_SESSION['role'] = "admin";
             // alihkan ke halaman dashboard admin
             header("location:index.php");
@@ -36,16 +38,18 @@ if($cek > 0){
             // buat session login dan username
             $_SESSION['username'] = $data['username'];
             $_SESSION['id_user'] = $data['id_user'];
+            $_SESSION['name'] = $data['name'];
             $_SESSION['email'] = $data['email'];
             $_SESSION['no_tlp'] = $data['no_tlp'];
+            $_SESSION['address'] = $data['address'];
             $_SESSION['role'] = "user";
             // alihkan ke halaman dashboard user
             header("location:index.php");
     
         }
     }else{
-        // alihkan ke halaman login kembali
-        // header("location:index.php?pesan=gagal_password salah");
+        //alihkan ke halaman login kembali
+        header("location:index.php?pesan=gagal_password salah");
     }
  }
 ?>

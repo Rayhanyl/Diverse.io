@@ -107,7 +107,7 @@ $data = $conn->query("SELECT * FROM tb_product INNER JOIN tb_type ON tb_product.
 ?>
           <div class="col-lg-3 mt-4 mb-4">
             <div class="card" style="border-radius:15px;">
-              <img class="responsive rounded-circle" src="assets/img/product/<?php echo htmlentities($row['picture']);?>">
+              <img class="responsive rounded-circle" src="assets/img/product/<?php echo htmlentities($row['picture_prdct']);?>">
               <div class="card-body">
                 <div class="card-title"><strong><?= $row['product_name']?></strong></div>
                 <hr>

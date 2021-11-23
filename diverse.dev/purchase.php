@@ -34,11 +34,11 @@ $data = $conn->query("SELECT * FROM tb_booking INNER JOIN tb_product ON tb_booki
   while($row = $data->fetch_assoc()) {
 ?>
       <tr>
-        <td><?= $row['nama'];?></td>
-        <td>Rp.<?= $row['harga'];?>.,/10pax</td>
-        <td><?= $row['username'];?></td>
+        <td><?= $row['product_name'];?></td>
+        <td>Rp.<?= $row['harga'];?>.,</td>
+        <td><?= $row['name'];?></td>
         <td><?= $row['email'];?></td>
-        <td><?= $row['no_tlp'];?></td>
+        <td>+<?= $row['no_tlp'];?></td>
         <td>
           <img src="image/bukti/<?php echo htmlentities($row['picture']);?>" width="70" height="70">
         </td>

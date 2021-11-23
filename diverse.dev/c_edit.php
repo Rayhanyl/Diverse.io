@@ -30,6 +30,7 @@ $row = $data->fetch_assoc()
 						<select class="form-control" name='status'>
 							<option value="<?= $row['status'] ?>"><?= $row['status'] ?></option>
 							<option value="Already Paid">Already Paid</option>
+							<option value="Invalid payment receipt">Invalid payment receipt</option>
 						</select>
 					</div>
 

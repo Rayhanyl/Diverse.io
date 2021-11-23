@@ -5,15 +5,17 @@ if(isset($_POST['register'])){
 
     // filter data yang diinputkan
     $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
+    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
     // enkripsi password
     $password = $_POST["password"];
     $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
     $no_tlp = filter_input(INPUT_POST, 'no_tlp', FILTER_SANITIZE_STRING);
+    $address = filter_input(INPUT_POST, 'address', FILTER_SANITIZE_STRING);
     $role = filter_input(INPUT_POST, 'role', FILTER_SANITIZE_STRING);
 
 
-    $sql = "INSERT INTO tb_user (username, password, email, no_tlp, role)
-    VALUES ('".$username."', '".$password."', '".$email."', '".$no_tlp."', '".$role."')";
+    $sql = "INSERT INTO tb_user (username, password, name, email, no_tlp, address ,role)
+    VALUES ('".$username."', '".$password."', '".$name."', '".$email."', '".$no_tlp."', '".$address."', '".$role."')";
 
     if ($conn->query($sql) === TRUE) {
         header("location:index.php");

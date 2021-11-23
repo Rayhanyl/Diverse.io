@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/shope.css">
   <link href="assets/css/fontawesome/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <!--load all styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -22,13 +23,13 @@ session_start()
   <!-- Header -->
   <!-- Navbar -->
   <div id="navbar">
-    <a href="#default" id="logo">Diserve.IO</a>
-    <div id="navbar-right">
-      <a href="index.php"><i class="fas fa-home"></i> Home</a>
-      <a href="shop.php"><i class="fab fa-shopify"></i> Shop</a>
-      <a href="scan.php"><i class="fas fa-qrcode"></i> Scan</a>
-      <a href="help.php"><i class="fas fa-question"></i> Help</a>
-      <a href="info.php"><i class="fas fa-info-circle"></i> Info</a>
+    <a class="animate__animated animate__backInLeft" href="#default" id="logo">Diserve.IO</a>
+    <div class="animate__animated animate__fadeInUp animate__delay-1s" id="navbar-right">
+      <a href="index.php"><i class="fas fa-home "></i> Home</a>
+      <a href="shop.php"><i class="fab fa-shopify "></i> Shop</a>
+      <a href="scan.php"><i class="fas fa-qrcode "></i> Scan</a>
+      <a href="help.php"><i class="fas fa-question "></i> Help</a>
+      <a href="info.php"><i class="fas fa-info-circle "></i> Info</a>
       <?php if (empty($_SESSION['role'])){ ?>
       <a href="#" data-toggle="modal" data-target="#myModal"><i class="fas fa-sign-in-alt"></i> Login</a>
       <?php } else { ?>
@@ -97,20 +98,28 @@ session_start()
       <div class="modal-body">
         <form action="regist.php" method="post">
           <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" placeholder="Enter Your Name" name="name">
+          </div>
+          <div class="form-group">
             <label for="name">Username:</label>
-            <input type="text" class="form-control" placeholder="Enter username" name="username">
+            <input type="text" class="form-control" placeholder="Enter Username" name="username">
           </div>
           <div class="form-group">
             <label for="pwd">Password:</label>
-            <input type="password" class="form-control" placeholder="Enter password" name="password">
+            <input type="password" class="form-control" placeholder="Enter Password" name="password">
           </div>
           <div class="form-group">
             <label for="email">Email:</label>
             <input type="email" class="form-control" placeholder="Enter Email" name="email">
           </div>
           <div class="form-group">
-            <label for="no_tlp">Nomor Telfon</label>
+            <label for="no_tlp">Phone Number</label>
             <input type="text" class="form-control" placeholder="Enter nomer 62.." name="no_tlp">
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" placeholder="Enter Address" name="address">
           </div>
           <input type="text" name="role" value="user" hidden>
           <button type="submit" name="register" class="btn btn-primary" value="Daftar">Register</button>

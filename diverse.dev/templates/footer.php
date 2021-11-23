@@ -6,10 +6,10 @@
         <p class="p-1"><strong>Diverse.IO</strong></p>
       <?php } else { ?>
       <?php if ($_SESSION['role'] == 'admin'){ ?>
-      <p class="p-1"><b><?php echo $_SESSION['username'];?></b></p>
+      <p class="p-1"><b><?php echo $_SESSION['name'];?></b></p>
       <?php } else { ?>
       <?php if ($_SESSION['role'] == 'user'){ ?>
-      <p class="p-1"><b><?php echo $_SESSION['username'];?></b></p>
+      <p class="p-1"><b><?php echo $_SESSION['name'];?></b></p>
       <?php } } }?>
     </div>
     <div class="foot-content">
