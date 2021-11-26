@@ -9,208 +9,188 @@
 	</div>
 	<!-- Jumbtron -->
 
-	<!--  -->
-	<div class="container">
-        <h2>Frequently Asked Questions (FAQ)</h2>
-        <!-- Nav pills -->
-        <ul class="nav nav-pills" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="pill" href="#how">How Question?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="pill" href="#what">What Question?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="pill" href="#if">If Question?</a>
-          </li>
-        </ul>
+	<!-- Information Companny  -->
+	 <div class="container">
+     <div class="row">
+       <div class="col-md text-center">
+         <img class="rounded" src="assets/img/D.png" width="250">
+       </div>
+       <div class="col-md">
+         <p style="font-size:20px; font-weight:bold;"><i>Profile Company</i></p>
+         <p class="justify">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+       </div>
+     </div>
+   </div>
+  <!-- Information Companny  -->
 
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div id="how" class="container tab-pane active"><br>
+  <!-- Pembatas -->
+  <div class="text-center" style="height:200px; margin-top:35px; margin-bottom:35px;padding:70px;"> 
+    <p style="font-size:35px; font-weight:bold;">Meet Our Team Member</p>
+    <p style="font-size:15px;"> <i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt.</i></p>
+  </div>
+  <!-- Pembatas -->
 
-        <!-- Pay Product -->
-          	<div>
-          		<p style="font-size:20px; font-weight:bold;">1. How can I pay for my products?</p>
-          		<div class="container pl-4">
-          		<p style="font-size:16px;">We offer several ways of payment, that will be presented after you did a checkout of your products, such as:</p>
-
-          		<!-- Transfer Bank -->
-          			<p class="pl-4" style="font-size:15px; font-weight:bold;">A.Bank transfer</p>
-          				<p class="pl-5">
-          				<ul style="padding-left:50px;">
-          					<li>
-          						On the checkout page, click Pay
-          					</li>
-          					<li>
-          						You will be presented with three links for your payment. Click Bank Transfer
-          					</li>
-          					<li>
-          						You will be given the information regarding our account number for your payment and the amount of your purchase
-          					</li>
-          					<li>
-          						After you transferred the money to our account, you will need to upload your payment invoice to our website to confirm your payment, and enter a code that will be sent to your phone. The code will be able to be used for 24 hours.
-          					</li>
-          				</ul>
-          				</p>
-
-          		<!-- Transfer Bank -->
-
-				<!-- DANA -->
-				    <p class="pl-4" style="font-size:15px; font-weight:bold;">B.DANA</p>
-          				<p class="pl-5">
-          				<ul style="padding-left:50px;">
-          					<li>
-          						On the checkout page, click Pay
-          					</li>
-          					<li>
-          						You will be presented with three links for your payment. Click DANA
-          					</li>
-          					<li>
-          						You will be given the information regarding our account number for your payment and the amount of your purchase
-          					</li>
-          					<li>
-          						After you transferred the money to our account, you will need to upload your payment invoice to our website to confirm your payment, and enter a code that will be sent to your phone. The code will be able to be used for 24 hours.
-          					</li>
-          				</ul>
-          				</p>
-				<!-- DANA -->
-
-
-				<!-- OVO -->
-				    <p class="pl-4" style="font-size:15px; font-weight:bold;">C.OVO</p>
-          				<p class="pl-5">
-          				<ul style="padding-left:50px;">
-          					<li>
-          						On the checkout page, click Pay
-          					</li>
-          					<li>
-          						You will be presented with three links for your payment. Click OVO
-          					</li>
-          					<li>
-          						You will be given the information regarding our account number for your payment and the amount of your purchase
-          					</li>
-          					<li>
-          						After you transferred the money to our account, you will need to upload your payment invoice to our website to confirm your payment, and enter a code that will be sent to your phone. The code will be able to be used for 24 hours.
-          					</li>
-          				</ul>
-          				</p>
-				<!-- OVO -->
-          		</div>
-          	</div>
-        	<!-- Pay Product -->
-
-          	<!-- Scan Product -->
-          	<div>
-          		<p style="font-size:20px; font-weight:bold;">2. How can I scan my products?</p>
-          		<div class="container pl-4">
-          		
-          	<!-- Product Scan Computer-->
-          		<p style="font-size:16px;">Via Computer/Laptop (you need a webcam/your laptop camera for this</p>
-          			<p class="pl-4" style="font-size:15px; font-weight:bold;">
-          				<ul>
-          					<li>
-          						On the top right at the main page, click Scan
-          					</li>
-          					<li>
-          						Put the barcode of your product right in front of your camera/webcam
-          					</li>
-          					<li>
-          						Wait for a few moments
-          					</li>
-          					<li>
-          						The results will be shown to you with an information regarding your product and the status if your product is eco-friendly or not
-          					</li>
-          				</ul>
-          			</p>
-          		<!-- Product Scan Computer -->
-
-          		<!-- Product Scan Phone-->
-          		<p style="font-size:16px;">via Phone:</p>
-          			<p class="pl-4" style="font-size:15px; font-weight:bold;">
-          				<ul>
-          					<li>
-          						On the top right at the main page, click Scan
-          					</li>
-          					<li>
-          						Scan your product using barcode reader on your phone
-          					</li>
-          					<li>
-          						Wait for a few moments
-          					</li>
-          					<li>
-          						The results will be shown to you with an information regarding your product and the status if your product is eco-friendly or not
-          					</li>
-          				</ul>
-          			</p>
-          		<!-- Product Scan Phone -->
-          		</div>
-
-          	</div>
-          	<!-- Scan Product -->
-
-          	<!-- Boxes Work -->
-          	<div>
-          		<p style="font-size:20px; font-weight:bold;">3. How do the subscription boxes work?</p>
-          		<p class="justify pl-4">
-          			A subscription box is a box filled with eco-friendly products that you can get for just Rp. 250.000/month. The products that will be included (but not limited to) are fabric softener, soap, face tissue, and toilet paper among many others. There are 5 types of the box that you can purchase, such as Charoite, Chroma, Emerald, Verdant, and ???. 
-          		</p>
-          	</div>
-          	<!-- Boxes Work -->
-
-          	<!-- Boxes Sign in -->
-          	<div>
-          		<p style="font-size:20px; font-weight:bold;">4. How can I sign up for the subscription boxes?</p>
-          		<div class="container pl-4">
-          		<p style="font-size:16px;">If you want to subscribe to the box, here are the steps:</p>
-          		<p class="pl-5">
-          			<ul>
-          				<li>
-          					On the top right at the main page, click Subscription Box
-          				</li>
-          				<li>
-          					Click Subscribe
-          				</li>
-          				<li>
-          					Fill in the form with informations such as your name, date of birth, telephone number, billing address, home address, credit card number, expiration date, and e-mail
-          				</li>
-          				<li>
-          					After several moments, you will get an e-mail that will confirm your data for the subscription boxes
-          				</li>
-						<li>
-          					You will receive one box each month delivered to your house filled with eco-friendly products that will be different for each month
-          				</li>
-          				<li>
-          					If you want to cancel your subscription, please contact us via e-mail (diverse.io@gmail.com)
-          				</li>
-          			</ul>
-          		</p>
-          		</div>
-          	</div>
-          	<!-- Boxes Sign in -->
+  <!-- Team -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <!--  -->
+        <div class="d-flex flex-column">
+          <div class="text-center p-2">
+            <img class="rounded-circle" src="assets/img/D.png" width="200">
           </div>
-          <div id="what" class="container tab-pane fade"><br>
-            <p style="font-size:20px; font-weight:bold;">What happens if my scanned products are deemed not eco-friendly?</p>
-            <p class="justify">
-            	There will be a piece of information regarding the status of your product and a link that you can click. If you click the link, you will be redirected into our main page so that you can look for more eco-friendly products that you can buy.
+          <div class="p-2">
+            <p class="text-center" style="font-size:18px;"> 
+              <b>JEFRI NANDA I</b> 
             </p>
-          </div>
-          <div id="if" class="container tab-pane fade"><br>
-            <p style="font-size:20px; font-weight:bold;">If I have many more questions, how do I contact Diverse.io?</p>
-            <p class="justify">
-              <p style="font-size:18px;">If you have more questions and inquiries, you can contact us on:</p>
-              <p style="font-size:16px;"><li>e-mail: diverse.io@gmail.com</li></p>
-              <p style="font-size:16px;"><li>Whatsapp: xxxxxxxx</li></p>
-              <p style="font-size:16px;"><li>Instagram: @diverse.io</li></p>
+            <p class="text-center" style="font-size:15px; color:blue;">
+              Chief executive officer
+            </p>
+            <p class="center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+            <p class="text-center">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin-in"></i>
             </p>
           </div>
         </div>
-	</div>
-	<!--  -->
-		<hr>
-	<div class="container">
-		
-	</div>
+        <!--  -->
+      </div>
+      <div class="col-sm-4">
+        <!--  -->
+        <div class="d-flex flex-column">
+          <div class="text-center p-2">
+            <img class="rounded-circle" src="assets/img/D.png" width="200">
+          </div>
+          <div class="p-2">
+            <p class="text-center" style="font-size:18px;"> 
+              <b>JEFRI NANDA I</b> 
+            </p>
+            <p class="text-center" style="font-size:15px; color:blue;">
+              Chief Technology Officer
+            </p>
+            <p class="center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+            <p class="text-center">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin-in"></i>
+            </p>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <div class="col-sm-4">
+        <!--  -->
+        <div class="d-flex flex-column">
+          <div class="text-center p-2">
+            <img class="rounded-circle" src="assets/img/D.png" width="200">
+          </div>
+          <div class="p-2">
+            <p class="text-center" style="font-size:18px;"> 
+              <b>JEFRI NANDA I</b> 
+            </p>
+            <p class="text-center" style="font-size:15px; color:blue;">
+              Manager
+            </p>
+            <p class="center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+            <p class="text-center">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin-in"></i>
+            </p>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+  </div>
+  <!-- Team -->
+
+  <!-- Pembatas -->
+  <div class="text-center" style="height:200px; margin-top:25px; margin-bottom:25px;padding:70px;"> 
+    <p style="font-size:35px; font-weight:bold;">Contact Us</p>
+    <p style="font-size:15px;"> <i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt.</i></p>
+  </div>
+  <!-- Pembatas -->
+
+  <!-- Contact Us -->
+
+  <div class="container">
+    <div class="container">
+        <p><h2>LANDMARKIT</h2></p>
+        <div class="card-body mb-4" style="background-image:linear-gradient(to left, #90e0ef, #caf0f8, #edf2f4);">
+          <div class="row">
+            <div class="col-4">
+              <p>Bogor,jawabarat</p>
+              <p>Jalan Ir. H. Juanda, Bogor Tengah; Bogor, West Java, Indonesia</p>
+            </div>
+            <div class="col-4">
+              <p><i class="fas fa-phone-square-alt"></i> +62082112440715</p>
+              <p><i class="fas fa-envelope"></i> Diverse.io@gmail.com</p>
+              <p><i class="fab fa-instagram"></i> Diverse.io</p>
+              <p><i class="fab fa-linkedin-in"></i> Diverse.io</p>
+            </div>
+            <div class="col-4 text-center">
+              <i class="fas fa-map-marked-alt fa-8x" style="color:#1b4965;"></i>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md pt-2 pb-2" style="border-radius:15px; background-image:linear-gradient(to right, #90e0ef, #caf0f8, #edf2f4); ">
+        <form>
+          <div class="form-group">
+            <label>Username:</label>
+            <input class="form-control" type="text" name="userguest">
+          </div>
+          <div class="form-group">
+            <label>Email:</label>
+            <input class="form-control" type="text" name="emailguest">
+          </div>
+          <div class="form-group">
+            <label>Phone Number:</label>
+            <input class="form-control" type="text" name="phoneguest">
+          </div>
+          <div class="form-group">
+            <label>Address:</label>
+            <textarea class="form-control" type="text" rows="4" name="addressguest"></textarea>
+          </div>
+          <button class="btn" type="btn" name="guest" style="width:100%; background-color: #1b4965; color: white;">SEND MESSAGE</button>
+        </form>
+      </div>
+      <div class="col-md pt-2 text-center" >
+        <!-- Map -->
+        <!-- google maps -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.5705267458372!2d114.57444712927017!3d-3.3152044552689253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de423d48a3dc841%3A0x1821d6c60c5a9a48!2sJasa+Pembuatan+Website+Banjarmasin!5e0!3m2!1sid!2sid!4v1527727490692" width="600" height="450" frameborder="0" style="border:0; border-radius:15px;" allowfullscreen></iframe>
+
+        <!-- Map -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Us -->
+
 </div>
 <!-- Bagian Help -->
 <?php include ('templates/footer.php'); ?>
