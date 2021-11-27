@@ -28,8 +28,8 @@ session_start()
       <a href="index.php"><i class="fas fa-home "></i> Home</a>
       <a href="shop.php"><i class="fab fa-shopify "></i> Shop</a>
       <a href="scan.php"><i class="fas fa-qrcode "></i> Scan</a>
-      <a href="help.php"><i class="fas fa-question "></i> Help</a>
       <a href="info.php"><i class="fas fa-info-circle "></i> Info</a>
+      <a href="help.php"><i class="fas fa-question "></i> Help</a>
       <?php if (empty($_SESSION['role'])){ ?>
       <a href="#" data-toggle="modal" data-target="#myModal"><i class="fas fa-sign-in-alt"></i> Login</a>
       <?php } else { ?>

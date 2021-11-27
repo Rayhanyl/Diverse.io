@@ -107,14 +107,24 @@
     background-image: linear-gradient(to right, #ed254e, #ffea00, #37ff8b);">
     <div class="row"> 
 
-    <!-- Query Mengambil data product -->
-    <?php 
-    $data = $conn->query("SELECT * FROM tb_product INNER JOIN tb_category ON tb_product.category = tb_category.id_category");
-      while($row = $data->fetch_assoc()) {
-    ?>
-    <!-- Query Mengambil data product -->
+    <?php
+    $batas = 15;
+    $halaman = isset($_GET['halaman'])?(int)$_GET['halaman'] : 1;
+    $halaman_awal = ($halaman>1) ? ($halaman * $batas) - $batas : 0;
 
-      <div class="col-md-4 mt-2">
+    $previous = $halaman - 1;
+    $next = $halaman + 1;
+
+    $data = mysqli_query($conn,"SELECT * FROM tb_product INNER JOIN tb_category ON tb_product.category = tb_category.id_category");
+    $jumlah_data = mysqli_num_rows($data);
+    $total_halaman = ceil($jumlah_data / $batas);
+
+    $data = mysqli_query($conn,"SELECT * FROM tb_product INNER JOIN tb_category ON tb_product.category = tb_category.id_category limit $halaman_awal, $batas");
+    while($row = mysqli_fetch_array($data)){
+    ?>
+
+
+      <div class="col-md-4 mt-4">
         <div class="card" style="border-radius:15px;">
           <div class="card-header text-center" style="background-color:white;">
             <img class="responsive rounded" src="assets/img/product/<?php echo htmlentities($row['product_picture']);?>">
@@ -144,15 +154,38 @@
       </div>
 
       <!-- Tag Penutup -->
-      <?php } ?>
+      <?php }{} ?>
       <!-- Tag Penutup -->
     
     </div>
   </div>
 	<!-- Catalog Product -->
 
+
 </div>
 <!-- Bagian Shope -->
+
+ <!-- Pagenation -->
+    <nav>
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" <?php if($halaman > 1){echo "href='?halaman=$previous'"; }?>>
+            Previous
+          </a>
+        </li>
+        <?php
+        for($x=1;$x<=$total_halaman;$x++){
+        ?>
+        <li class="page-item">
+          <a class="page-link" href="?halaman=<?php echo $x ?>"><?php echo $x; ?></a>
+        </li>
+      <?php } ?>
+        <li class="page-item">
+          <a class="page-link" <?php if($halaman < $total_halaman) { echo  "href='?halaman=$next'";} ?>>Next</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Pagenation -->
 
 
 <?php include ('templates/footer.php'); ?>

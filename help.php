@@ -208,9 +208,34 @@
 	</div>
 	<!--  -->
 		<hr>
-	<div class="container">
-		
+	<!-- Question -->
+  <div class="container" style="width:800px;">
+    <?php 
+    $data = $conn->query("SELECT * FROM tb_question");
+          while($row = $data->fetch_assoc()) {
+    ?>
+    <div class="media border p-3 mt-4" style="border-radius:10px; background-image:linear-gradient(to bottom, #90e0ef, #caf0f8, #edf2f4);">
+      <img src="assets/img/D.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+      <div class="media-body">
+        <h4><?= $row['userguest'];?> <small><i>Posted on <?= $row['tanggal'];?></i></small></h4>
+        <p><?= $row['message'];?></p>
+
+        <!--  -->
+        <div class="media p-3">
+          <img src="assets/img/D.png" alt="Jane Doe" class="mr-3 mt-3 rounded-circle" style="width:45px;">
+          <div class="media-body">
+            <h4>Admin<small><i> Diverse.io</i></small></h4>
+            <p><?= $row['answere'];?></p>
+          </div>
+        </div> 
+        <!--  -->
+
+      </div>
+    </div>
+  <?php }?>
 	</div>
+  <!-- Question -->
+  <hr>
 </div>
 <!-- Bagian Help -->
 <?php include ('templates/footer.php'); ?>

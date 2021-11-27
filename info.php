@@ -159,23 +159,27 @@
     </div>
     <div class="row">
       <div class="col-md pt-2 pb-2" style="border-radius:15px; background-image:linear-gradient(to right, #90e0ef, #caf0f8, #edf2f4); ">
-        <form>
+        <form action="message.php" method="POST">
+          <div class="form-group text-center p-2" style="height:40px; background-color:#1b4965; border-radius:10px;">
+          <p style="font-size:18px; font-weight:bold; color: white;">If you have any questions?, Input in this Form.</p>           
+          </div>
           <div class="form-group">
             <label>Username:</label>
-            <input class="form-control" type="text" name="userguest">
+            <input class="form-control" type="text" name="userguest" placeholder="Enter Name...">
           </div>
           <div class="form-group">
             <label>Email:</label>
-            <input class="form-control" type="text" name="emailguest">
+            <input class="form-control" type="email" name="emailguest" placeholder="Enter Email...">
           </div>
           <div class="form-group">
             <label>Phone Number:</label>
-            <input class="form-control" type="text" name="phoneguest">
+            <input class="form-control" type="text" name="phoneguest" placeholder="Enter Number Phone...">
           </div>
           <div class="form-group">
-            <label>Address:</label>
-            <textarea class="form-control" type="text" rows="4" name="addressguest"></textarea>
+            <label>Message:</label>
+            <textarea class="form-control" type="text" rows="4" name="message"></textarea>
           </div>
+          <input type="text" name="answere" value="." hidden>
           <button class="btn" type="btn" name="guest" style="width:100%; background-color: #1b4965; color: white;">SEND MESSAGE</button>
         </form>
       </div>
